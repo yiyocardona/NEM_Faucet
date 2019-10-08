@@ -101,7 +101,7 @@ app.post('/', function (req, res, err) {
         }    else{
                 console.log('doesn\'t exist, then I will insert it ');
                 
-                var random = new RandomOrg({ apiKey: '6546914d-bc8c-4e6b-a2ed-b5048e79c26d' });
+                var random = new RandomOrg({ apiKey: 'api key' });
                
                     random.generateIntegers({ min: 1, max: 9, n: 1 })
                     .then((res) => {
@@ -114,7 +114,7 @@ app.post('/', function (req, res, err) {
                         var mess = req.body.Message;
                         
                         
-                        var common = nem.model.objects.create("common")('12369876','a2fa3262daf40683715968fa742c1525228d1ca1ad0cb526939a32d908818d6b');
+                        var common = nem.model.objects.create("common")('password','private key');
                         var transferTransaction = nem.model.objects.create("transferTransaction")(addr, res.random.data[0] ,mess);
                         var endpoint = nem.model.objects.create("endpoint")("http://hugetestalice.nem.ninja", nem.model.nodes.defaultPort);
                         var transactionEntity = nem.model.transactions.prepare("transferTransaction")(common, transferTransaction, nem.model.network.data.testnet.id)
