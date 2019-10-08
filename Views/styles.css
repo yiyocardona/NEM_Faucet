@@ -1,0 +1,109 @@
+
+
+@font-face {
+    
+    font-family:'Roboto';
+    src: url(Roboto-Black.ttf);
+  }
+
+body {
+    font-family: 'Roboto';
+    height: auto;
+    max-width: 100%;
+    background: url(background.jpg);
+    display: block;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}  
+
+#wrapper{
+    position: relative;
+    top:0px;
+}
+
+#button{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    
+
+
+}
+
+#titulo{
+    font-size: 30px;
+    text-align: center;
+    
+
+}
+
+button{
+    
+    padding: 10px 15px 11px !important;
+    font-size: 18px !important;
+    background-color: #fca838;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    color: #ffffff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px black;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    
+  
+}
+
+.forms{
+    font-size: 20px;
+    text-align: center;
+}
+
+#Address{
+    position: relative;
+    left:3px;
+}
+
+#Message{
+    position: relative;
+    top:10px;
+}
+
+img{
+    width:15%;
+    position: relative;
+    bottom: 0px;
+}
+
+#approved{
+    line-height: 38px;
+    padding: 10px;
+    height: 40px;
+    color : white;
+    background-color: #8be67c;
+    text-align: center;
+    width: 400px;
+    position: relative;
+    top: 75px;
+    left :33%;
+}
+
+#fail{
+    line-height: 38px;
+    padding: 10px;
+    height: 40px;
+    color : white;
+    background-color: #e26666;
+    text-align: center;
+    width: 400px;
+    position: relative;
+    top: 75px;
+    left :33%;
+}
